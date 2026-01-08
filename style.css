@@ -15,3 +15,89 @@ a {
   text-decoration: none;
 }
 /* Navbar styling */
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 30px;
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.eshop-logo h1 {
+  color: #c50dc5;
+}
+.eshop-logo h1 span {
+  color: red;
+}
+#menuIcon {
+  display: none;
+}
+.navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.navlinks a {
+  font-size: 22px;
+  font-weight: 100;
+  color: black;
+  position: relative;
+  padding-bottom: 6px;
+}
+.navlinks a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(145deg, blue, aqua, black, darkblue);
+  transition: all 0.3s ease-in-out;
+}
+.navlinks a:hover::after {
+  width: 100%;
+}
+.user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.user-profile i {
+  font-size: 30px;
+  position: relative;
+  padding-bottom: 6px;
+}
+.user-profile i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(145deg, blue, aqua, black, darkblue);
+  transition: all 0.3s ease-in-out;
+}
+.user-profile i:hover::after {
+  width: 100%;
+}
+.counts-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.counts-show span {
+  width: 22px;
+  height: 22px;
+  background-color: #1ddc1d;
+  color: white;
+  border-radius: 50%;
+  position: relative;
+  right: 12px;
+  top: 8px;
+}
