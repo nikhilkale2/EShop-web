@@ -21,10 +21,10 @@ a {
   justify-content: space-around;
   align-items: center;
   padding: 8px 30px;
-  background-color: aliceblue;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 .eshop-logo h1 {
   color: #c50dc5;
@@ -42,7 +42,7 @@ a {
   gap: 40px;
 }
 .navlinks a {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 100;
   color: black;
   position: relative;
@@ -56,6 +56,7 @@ a {
   width: 0;
   height: 3px;
   background: linear-gradient(145deg, blue, aqua, black, darkblue);
+
   transition: all 0.3s ease-in-out;
 }
 .navlinks a:hover::after {
@@ -90,6 +91,8 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  left: 10px;
 }
 .counts-show span {
   width: 22px;
@@ -98,6 +101,101 @@ a {
   color: white;
   border-radius: 50%;
   position: relative;
-  right: 12px;
-  top: 8px;
+  right: 18px;
+  top: 5px;
+}
+.mobile-logo img {
+  display: none;
+}
+#navClose i {
+  display: none;
+}
+/* Hero page styling */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #9e8a8a3f;
+  border-radius: 30px;
+  margin-top: 60px;
+}
+
+.hero-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-slide {
+  display: none;
+}
+/* active class add */
+.hero-slide.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  padding: 20px;
+}
+.hero-content {
+  max-width: 550px;
+}
+.hero-content h1 {
+  font-family: "Gabarito", sans-serif;
+  font-size: 52px;
+  font-style: italic;
+}
+.hero-content p {
+  font-size: 19px;
+  margin-top: 15px;
+  line-height: 30px;
+  font-family: "Gabarito", sans-serif;
+}
+.hero-content button {
+  padding: 18px 60px;
+  font-size: 25px;
+  margin-top: 15px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content button::after {
+  content: "";
+  position: absolute;
+  width: 103%;
+  height: 108%;
+  background: linear-gradient(to bottom right, #008cff, #e100ff);
+  border-radius: 50px;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+.hero-content button:hover {
+  z-index: 1;
+}
+.hero-content button:hover a {
+  color: white;
+}
+.hero-img img {
+  width: 600px;
+}
+.scroll-btn {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.scroll-btn i {
+  font-size: 40px;
 }
