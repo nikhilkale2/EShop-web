@@ -113,4 +113,54 @@
   .scroll-btn i {
     font-size: 32px;
   }
+  /* About section styling */
+  .section-about {
+    width: 100%;
+  }
+  .section-heading {
+    margin: 20px 0;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px;
+  }
+  .about-img img {
+    width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+    margin-top: 15px;
+  }
+  .about-content p {
+    max-width: 550px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .about-icons {
+    margin: 15px 0;
+    margin-right: 0px;
+  }
+  .about-content button {
+    margin-right: 0px;
+    padding: 20px 40px;
+    margin-top: 12px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
 }
