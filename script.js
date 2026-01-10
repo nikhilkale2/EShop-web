@@ -93,7 +93,6 @@ function prevImage() {
 }
 
 scrollLeft.addEventListener("click", () => {
-  gsap.from("");
   nextImage();
   showimage(imgIndex);
 });
